@@ -37,3 +37,8 @@ You should to set up your IDE so that it runs Prettier (`node_modules/prettier/b
 
 In particular, if you use IntelliJ IDEA:
 
+1. Open IDEA's Preferences.
+1. Go to Tools -> File Watchers.
+1. Add the following two entries:
+
+[[/images/preview-ts.png]]
