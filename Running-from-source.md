@@ -10,7 +10,7 @@ The following steps show how to run the Judgels platform locally, from source, w
 
    It should return 200 OK with the version string.
 
-1. Similary, run Uriel server. By default, it will listen to port 9003.
+1. Similary, run Uriel server. By default, it will listen to port 9004.
 
 1. Run Raphael dev server (`yarn start` inside `judgels-frontends/raphael`). By default, it will open your default web browser and navigate to `http://localhost:3000`.
 
