@@ -39,6 +39,7 @@ In particular, if you use IntelliJ IDEA:
 
 1. Open IDEA's Preferences.
 1. Go to Tools -> File Watchers.
-1. Add the following two entries:
+1. Add the following two entries: Prettier TS and Prettier TSX as depicted below.
 
-[[/images/preview-ts.png]]
+[[images/prettier-ts.png]]
+[[images/prettier-tsx.png]]
