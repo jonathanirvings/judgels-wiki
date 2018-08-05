@@ -1,4 +1,4 @@
 - [Dev's Guide](https://github.com/ia-toki/judgels/wiki/Dev's-Guide)
-  - [Backends local dev setup](https://github.com/ia-toki/judgels/wiki/Backends-local-dev-setup)
-  - [Frontend local dev setup](https://github.com/ia-toki/judgels/wiki/Frontend-local-dev-setup)
+  - [Backends dev setup](https://github.com/ia-toki/judgels/wiki/Backends-dev-setup)
+  - [Frontend dev setup](https://github.com/ia-toki/judgels/wiki/Frontend-dev-setup)
   - [Running from source](https://github.com/ia-toki/judgels/wiki/Running-from-source)
