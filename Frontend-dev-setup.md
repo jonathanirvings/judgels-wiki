@@ -8,7 +8,6 @@ This guide applies to developers of Judgels' only frontend microservice, Raphael
 ## Prerequisites
 
 - Yarn 1.3+
-- Docker
 - IntelliJ IDEA (optional, or another IDE)
 
 ## Preparing local working directory
