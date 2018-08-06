@@ -11,6 +11,7 @@ This guide applies to developers of Judgels' backend microservices (Jophiel, San
 
 - Java 8 JDK
 - MySQL 5.7+
+- Docker (for running integration tests)
 - IntelliJ IDEA
 
 ## Preparing local working directory
@@ -48,27 +49,7 @@ This guide applies to developers of Judgels' backend microservices (Jophiel, San
 
 ## Preparing Uriel
 
-1. Create a new local database called `judgels_uriel`.
-1. Go inside Uriel directory (`judgels-backends/uriel`).
-1. Copy the example config:
-
-       cp uriel-dist/var/conf/uriel.yml.example uriel-dist/var/conf/uriel.yml
-
-1. Open the config file `uriel-dist/var/conf/uriel.yml`.
-1. Under `database:`, modify `url`, `user`, and `password` as necessary.
-1. Check database connection and migration status:
-
-       ../gradlew dbStatus
-
-1. Run database migration:
-
-       ../gradlew dbMigrate
-
-1. Verify that there are tables generated in the database.
-1. Import the seed data: `judgels/seeds/judgels_uriel.sql`.
-1. Try running it locally:
-
-       ../gradlew run
+The steps are similar to preparing Jophiel above. Just replace replace all occurrences of `jophiel` to `uriel`.
 
 ## Creating a new IDEA project
 
