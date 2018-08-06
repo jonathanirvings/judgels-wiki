@@ -11,7 +11,6 @@ This guide applies to developers of Judgels' backend microservices (Jophiel, San
 
 - Java 8 JDK
 - MySQL 5.7+
-- Docker
 - IntelliJ IDEA
 
 ## Preparing local working directory
