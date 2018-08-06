@@ -33,10 +33,6 @@ This guide applies to developers of Judgels' backend microservices (Jophiel, San
 
 1. Open the config file `jophiel-dist/var/conf/jophiel.yml`.
 1. Under `database:`, modify `url`, `user`, and `password` as necessary.
-1. Check database connection and migration status:
-
-       ../gradlew dbStatus
-
 1. Run database migration:
 
        ../gradlew dbMigrate
