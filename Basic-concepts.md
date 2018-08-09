@@ -17,4 +17,4 @@ Frontend (Raphael):
 - [Yarn](https://yarnpkg.com/)
 - [React](https://reactjs.org/) with [CRA-TypeScript](https://github.com/wmonk/create-react-app-typescript)
 - [Redux](https://redux.js.org/)
-- [Blueprint](https://github.com/wmonk/create-react-app-typescript)
+- [Blueprint](https://blueprintjs.com/)
