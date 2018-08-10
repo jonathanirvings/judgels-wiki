@@ -1,4 +1,4 @@
-This guide applies to developers of Judgels' backend microservices (Jophiel, Sandalphon, Uriel, Sealtiel, Gabriel).
+This guide applies to developers of Judgels' backend microservices (Jophiel, Sandalphon, Uriel, Jerahmeel, Sealtiel, Gabriel).
 
 - [Prerequisites](#prerequisites)
 - [Preparing local working directory](#preparing-local-working-directory)
