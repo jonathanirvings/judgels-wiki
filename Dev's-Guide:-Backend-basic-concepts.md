@@ -17,16 +17,15 @@ This section explains the basic knowledge required for understanding Judgels cod
 
 ## Database design
 
-Judgels adapts the database design explained here: [Phabricator Database Schema](https://secure.phabricator.com/book/phabcontrib/article/database/). Some highlights:
+Judgels adapts the database design explained here: [Phabricator Database Schema](https://secure.phabricator.com/book/phabcontrib/article/database/). In particular:
 
-- Each object in Judgels has a **JID** (Judgels ID) in the form of **JID-XXX-YYYYYYYYYYYYYYYYYYYY**, where X is object type code and Y is a shortened UUID.
+- Here, by "objects" we mean objects as in REST resources. For example: users, problems, contests.
+- Each object in Judgels has a **JID** (Judgels ID) in the form of **JIDXXXXYYYYYYYYYYYYYYYYYYYY**, where X is object type code and Y is a shortened UUID. For example: **JIDUSER7uMucIkm1exJTu7sJvxR**.
 - No foreign keys, since we want that objects can be migrated between different Judgels app instances.
 - Properties that have complex structure are stored either on disk database as JSON strings. For example: grading result details.
-
-Additionally, each object may have the following columns:
-
-- **createdBy**, **createdAt**, **createdIp**: user, time, and IP when this object is created.
-- **updatedBy**, **updatedAt**, **updatedIp**: user, time, and IP when this object is updated.
+- Additionally, each object may have the following columns:
+  - **createdBy**, **createdAt**, **createdIp**: user, time, and IP when this object is created.
+  - **updatedBy**, **updatedAt**, **updatedIp**: user, time, and IP when this object is updated.
 
 ## Application layers
 
