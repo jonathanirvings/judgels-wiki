@@ -1,6 +1,7 @@
 This guide is intended for Judgels developers and contributors.
 
-- [Basic concepts](https://github.com/ia-toki/judgels/wiki/Basic-concepts)
-- [Backends dev setup](https://github.com/ia-toki/judgels/wiki/Backends-dev-setup)
-- [Frontend dev setup](https://github.com/ia-toki/judgels/wiki/Frontend-dev-setup)
-- [Running from source](https://github.com/ia-toki/judgels/wiki/Running-from-source)
+## New developer onboarding
+
+- Clone this repository.
+- Follow the guide to [run Judgels from source](https://github.com/ia-toki/judgels/wiki/Running-from-source).
+- Depending on which part of Judgels you want to develop (backend/frontend), read the basic concepts and set up IDE. See the links on the sidebar on the right.
