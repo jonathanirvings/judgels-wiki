@@ -1,4 +1,4 @@
-This guide applies to developers of Judgels' only frontend microservice, Raphael.
+This guide applies to developers of Judgels's only frontend microservice, Raphael.
 
 - [Prerequisites](#prerequisites)
 - [Preparing local working directory](#preparing-local-working-directory)
