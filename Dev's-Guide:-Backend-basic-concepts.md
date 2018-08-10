@@ -2,6 +2,7 @@ This section explains the basic knowledge required for understanding Judgels cod
 
 - [Tech stack](#tech-stack)
 - [Database design](#database-design)
+- [Application layers](#application-layers)
 
 ## Tech stack
 
@@ -26,3 +27,7 @@ Additionally, each object may have the following columns:
 
 - **createdBy**, **createdAt**, **createdIp**: user, time, and IP when this object is created.
 - **updatedBy**, **updatedAt**, **updatedIp**: user, time, and IP when this object is updated.
+
+## Application layers
+
+1. **Service**: where the REST API endpoints are declared. Example: `UserService`.
