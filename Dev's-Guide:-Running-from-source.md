@@ -43,12 +43,9 @@ This section explains how to run the Judgels platform locally from source, with 
 
 1. Open the config file `jophiel-dist/var/conf/jophiel.yml`.
 1. Under `database:`, modify `url`, `user`, and `password` as necessary.
-1. Run database migration:
-
-       ../gradlew dbMigrate
-
+1. Run database migration: `../gradlew dbMigrate`.
 1. Verify that there are tables generated in the database.
-1. Import the seed data to the database: `seeds/judgels_jophiel.sql`.
+1. Import the seed data (`seeds/judgels_jophiel.sql`) to the database.
 1. Verify that there data generated in the database.
 
 ## Setting up Uriel
