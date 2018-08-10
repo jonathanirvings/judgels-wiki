@@ -74,3 +74,5 @@ The steps are similar to Jophiel's above. Just replace replace all occurrences o
 1. Make sure that you can see the Judgels homepage with no errors.
 1. Log in to Judgels using superadmin account (username: `superadmin`, password: `superadmin`).
 1. Make sure that you can log in successfully.
+
+Congratulations, you have successfully run Judgels from source!
