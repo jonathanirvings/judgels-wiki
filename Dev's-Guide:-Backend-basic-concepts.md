@@ -2,7 +2,8 @@ This section explains the basic knowledge required for understanding Judgels cod
 
 - [Tech stack](#tech-stack)
 - [Database design](#database-design)
-- [Application layers](#application-layers)
+- [Authentication and authorization between microservices](#authentication-and-authorization-between-microservices)
+- [REST application layers](#rest-application-layers)
 
 ## Tech stack
 
@@ -29,11 +30,14 @@ Judgels adapts the database design explained here: [Phabricator Database Schema]
   - **createdBy**, **createdAt**, **createdIp**: user, time, and IP when this object is created.
   - **updatedBy**, **updatedAt**, **updatedIp**: user, time, and IP when this object is updated.
 
+## Authentication and authorization between microservices
+
+WIP
+
 ## REST application layers
 
 1. **Service**: declares the REST API endpoints. Example: `ContestService`.
-1. **Resource**: implements the REST API endpoints. Example: `ContestResource`.
-1. **Role checker**: authorizes REST API calls. Example: `ContestRoleChecker`.
+1. **Resource**: implements the REST API endpoints. Example: `ContestResource`.=
 1. **Store**: manages CRUD operations of business objects. Example: `ContestStore`.
 1. **Dao**: declares the CRUD operations in database. Example: `ContestDao`.
 1. **HibernateDao**: implements the CRUD operations in database. Example: `ContestHibernateDao`.
