@@ -44,7 +44,7 @@ An HTTP request to a Judgels backend endpoint may be accompanied by an `Authoriz
 - **Resource**: implements the REST API endpoints. Example: `ContestResource`.
 - **Store**: manages CRUD operations of business objects. Example: `ContestStore`.
 - **Dao**: declares the CRUD operations in database. Example: `ContestDao`.
-- **HibernateDao**: implements the CRUD operations in database. Example: `ContestHibernateDao`.
+- **HibernateDao**: implements the CRUD operations by executing SQL queries. Example: `ContestHibernateDao`.
 - **Model**: represents a row in a database. Example: `ContestModel`.
 
 ## Example request-response flow
