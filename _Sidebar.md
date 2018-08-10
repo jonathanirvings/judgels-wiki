@@ -1,7 +1,7 @@
 - [Introduction](https://github.com/ia-toki/judgels/wiki/Introduction-to-Judgels)
 - [Dev's Guide](https://github.com/ia-toki/judgels/wiki/Dev's-Guide)
   - [Running from source](https://github.com/ia-toki/judgels/wiki/Dev's-Guide:-Running-from-source)
-  - For backends:
-    - [Basic concepts](https://github.com/ia-toki/judgels/wiki/Dev's-Guide:-Backends-basic-concepts)
+  - For backend:
+    - [Basic concepts](https://github.com/ia-toki/judgels/wiki/Dev's-Guide:-Backend-basic-concepts)
   - For frontend:
     - [Basic concepts](https://github.com/ia-toki/judgels/wiki/Dev's-Guide:-Frontend-basic-concepts)
