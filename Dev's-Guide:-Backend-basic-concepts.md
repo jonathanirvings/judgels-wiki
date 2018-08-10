@@ -2,7 +2,7 @@ This section explains the basic knowledge required for understanding Judgels cod
 
 - [Tech stack](#tech-stack)
 - [Database design](#database-design)
-- [Authentication and authorization between microservices](#authentication-and-authorization-between-microservices)
+- [Authentication and authorization](#authentication-and-authorization)
 - [REST application layers](#rest-application-layers)
 
 ## Tech stack
@@ -30,15 +30,15 @@ Judgels adapts the database design explained here: [Phabricator Database Schema]
   - **createdBy**, **createdAt**, **createdIp**: user, time, and IP when this object is created.
   - **updatedBy**, **updatedAt**, **updatedIp**: user, time, and IP when this object is updated.
 
-## Authentication and authorization between microservices
+## Authentication and authorization
 
-WIP
+An HTTP request to a Judgels backend endpoint may be accompanied by an `Authorization` header, in the form of `Bearer <token>`. It means that the request was initiated by the user represented by the bearer token. The backend will ask Jophiel to convert the bearer token into a user JID. Then, the backend will decide whether the user JID is allowed to access the endpoint. 
 
 ## REST application layers
 
-1. **Service**: declares the REST API endpoints. Example: `ContestService`.
-1. **Resource**: implements the REST API endpoints. Example: `ContestResource`.=
-1. **Store**: manages CRUD operations of business objects. Example: `ContestStore`.
-1. **Dao**: declares the CRUD operations in database. Example: `ContestDao`.
-1. **HibernateDao**: implements the CRUD operations in database. Example: `ContestHibernateDao`.
-1. **Model**: represents a row in a database. Example: `ContestModel`.
+- **Service**: declares the REST API endpoints. Example: `ContestService`.
+- **Resource**: implements the REST API endpoints. Example: `ContestResource`.=
+- **Store**: manages CRUD operations of business objects. Example: `ContestStore`.
+- **Dao**: declares the CRUD operations in database. Example: `ContestDao`.
+- **HibernateDao**: implements the CRUD operations in database. Example: `ContestHibernateDao`.
+- **Model**: represents a row in a database. Example: `ContestModel`.
