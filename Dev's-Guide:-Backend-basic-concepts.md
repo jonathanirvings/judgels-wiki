@@ -24,5 +24,5 @@ Judgels adapts the database design explained here: [Phabricator Database Schema]
 
 Additionally, each object may have the following columns:
 
-- createdBy, createdAt, createdIp: user, time, and IP when this object is created.
-- updatedBy, updatedAt, updatedIp: user, time, and IP when this object is updated.
+- **createdBy**, **createdAt**, **createdIp**: user, time, and IP when this object is created.
+- **updatedBy**, **updatedAt**, **updatedIp**: user, time, and IP when this object is updated.
