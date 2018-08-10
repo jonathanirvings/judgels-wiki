@@ -4,7 +4,7 @@ This section explains the basic knowledge required for understanding Judgels cod
 - [Database design](#database-design)
 - [Authentication and authorization](#authentication-and-authorization)
 - [REST application layers](#rest-application-layers)
-- [Example request-response flow](#example-request--response-flow)
+- [Example request-response flow](#example-request-response-flow)
 
 ## Tech stack
 
