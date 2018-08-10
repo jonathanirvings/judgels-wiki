@@ -15,3 +15,8 @@ Judgels consists of several microservices, each having a codename after a Greek 
 - **Jerahmeel** (Training Gate): manages training and problem archives.
 - **Sealtiel** (Message Gate): manages grading requests and responses between microservices.
 - **Gabriel** (Grader): grades submissions.
+
+## Credit
+
+This work is initiated based on an IOI 2014 paper: [Components and Architectural Design
+of an Autograder System Family](http://www.ioinformatics.org/oi/pdf/v8_2014_69_80.pdf), written by Jordan Fernando and Inggriani Liem.
