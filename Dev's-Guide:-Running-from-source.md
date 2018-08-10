@@ -48,7 +48,7 @@ This section explains how to run the Judgels platform locally from source, with 
        ../gradlew dbMigrate
 
 1. Verify that there are tables generated in the database.
-1. Import the seed data: `judgels/seeds/judgels_jophiel.sql`.
+1. Import the seed data to the database: `seeds/judgels_jophiel.sql`.
 1. Verify that there data generated in the database.
 
 ## Setting up Uriel
