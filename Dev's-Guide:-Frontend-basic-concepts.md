@@ -3,7 +3,8 @@ This section explains the basic knowledge required for understanding Judgels cod
 ## Tech stack
 
 - [TypeScript](https://www.typescriptlang.org/)
+- [Prettier](https://prettier.io/)
 - [Yarn](https://yarnpkg.com/)
-- [React](https://reactjs.org/) with [CRA-TypeScript](https://github.com/wmonk/create-react-app-typescript)
+- [React](https://reactjs.org/) with [create-react-app-typescript](https://github.com/wmonk/create-react-app-typescript)
 - [Redux](https://redux.js.org/)
-- [Blueprint](https://blueprintjs.com/)
+- [Palantir Blueprint](https://blueprintjs.com/)
