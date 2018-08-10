@@ -1,4 +1,4 @@
-Judgels is a competitive programming platform. Using Judgels, we can:
+**Judgels** is a competitive programming platform. Using Judgels, we can:
 
 - create programming problems with various types, set up test data, and test solutions.
 - hold programming contests with various configurations.
@@ -15,6 +15,8 @@ Judgels consists of several microservices, each having a codename after a Greek 
 - **Jerahmeel** (Training Gate): manages training and problem archives.
 - **Sealtiel** (Message Gate): manages grading requests and responses between microservices.
 - **Gabriel** (Grader): grades submissions.
+
+Each of the microservices can be installed and scaled independently.
 
 ## Credit
 
