@@ -15,16 +15,16 @@ We highly recommend using IntelliJ IDEA. This section will only cover setup on I
 1. Generate a new IDEA project: `./gradlew idea`.
 1. Open IDEA.
 1. Click **Open**, and then select `judgels-backends/judgels-backends.ipr`. The project should now be ready.
-1. Important! Whenever an **Unlinked Gradle Project** popup appears and asks you to import the Gradle project, just ignore it and close the popup.
+1. **IMPORTANT**: Whenever an **Unlinked Gradle Project** popup appears and asks you to import the Gradle project, just ignore it and close the popup.
 1. Some of our libraries (Immutables, Dagger 2, Hibernate Static Metamodel) will generate classes during compilation (e.g. `judgels.jophiel.api.user.ImmutableUser`). This need to be also enabled in IDEA:
-   1. Open IDEA's Preferences.
-   1. Go to Build, Execution, Deployment -> Compiler -> Annotation Processors.
+   1. Open **Preferences**.
+   1. Go to **Build, Execution, Deployment** -> **Compiler** -> **Annotation Processors**.
    1. Set the following options:
 
       [[images/annotation-preprocessors.png]]
 
 1. Try building the project by clicking **Build** -> **Rebuild Project**.
-1. If the build succeeded, you're all set.
+1. If the build succeeded, you're all set!
 
 ## Running server from IDEA
 
