@@ -3,7 +3,7 @@
   - [Running from source](https://github.com/ia-toki/judgels/wiki/Dev's-Guide:-Running-from-source)
   - For backend:
     - [Basic concepts](https://github.com/ia-toki/judgels/wiki/Dev's-Guide:-Backend-basic-concepts)
-    - [Setting up IDE](https://github.com/ia-toki/judgels/wiki/Dev's-Guide:-Setting-up-backend IDE)
+    - [Setting up IDE](https://github.com/ia-toki/judgels/wiki/Dev's-Guide:-Setting-up-backend-IDE)
   - For frontend:
     - [Basic concepts](https://github.com/ia-toki/judgels/wiki/Dev's-Guide:-Frontend-basic-concepts)
-    - [Setting up IDE](https://github.com/ia-toki/judgels/wiki/Dev's-Guide:-Setting-up-frontend IDE)
+    - [Setting up IDE](https://github.com/ia-toki/judgels/wiki/Dev's-Guide:-Setting-up-frontend-IDE)
