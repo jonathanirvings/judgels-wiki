@@ -1,7 +1,7 @@
 This section explains how to run the Judgels platform locally from source, with default configuration. This is a good starting point for new developers to ensure that they can run Judgels on their machine.
 
 - [Prerequisites](#prerequisites)
-- [Setting up backends project](#setting-up-backends-project)
+- [Setting up backend project](#setting-up-backend-project)
 - [Setting up frontend project](#setting-up-frontend-project)
 - [Setting up Jophiel](#setting-up-jophiel)
 - [Setting up Uriel](#setting-up-uriel)
@@ -15,9 +15,9 @@ This section explains how to run the Judgels platform locally from source, with 
 - Docker
 - IntelliJ IDEA
 
-## Setting up backends project
+## Setting up backend project
 
-1. Go to the backends directory (`judgels-backends`).
+1. Go to the backend directory (`judgels-backends`).
 1. Run: `./gradlew check`
 
    This will download all required JAR dependencies, and run all unit and integration tests. Note that it may take quite a while for the first time.
