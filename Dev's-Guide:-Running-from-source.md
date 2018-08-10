@@ -62,15 +62,15 @@ The steps are similar to Jophiel's above. Just replace replace all occurrences o
    - Go to `judgels-backends/jophiel`.
    - Run: `../gradlew run`.
    - By default, it will listen to port 9001.
-   - To make sure that it is running correctly, hit the version endpoint: `curl http://localhost:9001/api/v2/version`. It should return the version string.
+   - To make sure that it is running correctly, hit the version endpoint: `http://localhost:9001/api/v2/version`. It should return the current version string.
 
 1. Similary, run Uriel server. By default, it will listen to port 9004.
-1. Run Raphael dev server:
+1. Run Raphael server:
 
    - Go to `judgels-frontends/raphael`.
    - Run: `yarn start`.
    - By default, it will open your default web browser and navigate to `http://localhost:3000`.
 
-1. Make sure that you can see the login page with no errors.
+1. Make sure that you can see the Judgels homepage with no errors.
 1. Log in to Judgels using superadmin account (username: `superadmin`, password: `superadmin`).
 1. Make sure that you can log in successfully.
