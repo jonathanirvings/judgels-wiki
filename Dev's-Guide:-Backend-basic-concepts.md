@@ -2,7 +2,6 @@ This section explains the basic knowledge required for understanding Judgels cod
 
 ## Tech stack
 
-Backends (Jophiel, Sandalphon, Uriel, Sealtiel, Jerahmeel):
 - Java 8
 - [Dropwizard](https://www.dropwizard.io/) for main REST server app
 - [MySQL](https://www.mysql.com/) for database
