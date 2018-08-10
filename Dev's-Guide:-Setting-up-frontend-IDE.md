@@ -16,5 +16,7 @@ Any IDE, but we highly recommend using IntelliJ IDEA. This section will only cov
    1. Go to **Tools** -> **File Watchers**.
    1. Add the following two entries: Prettier TS and Prettier TSX as depicted below.
 
-      [[images/prettier-ts.png]]
-      [[images/prettier-tsx.png]]
+     [[images/prettier-ts.png]]
+     [[images/prettier-tsx.png]]
+   
+   Now, whenever you edit and save files, Prettier will be run to format the files.
