@@ -30,4 +30,10 @@ Additionally, each object may have the following columns:
 
 ## Application layers
 
-1. **Service**: where the REST API endpoints are declared. Example: `UserService`.
+1. **Service**: declares the REST API endpoints. Example: `ContestService`.
+1. **Resource**: implements the REST API endpoints. Example: `ContestResource`.
+1. **Role checker**: authorizes REST API calls. Example: `ContestRoleChecker`.
+1. **Store**: manages CRUD operations of business objects. Example: `ContestStore`.
+1. **Dao**: declares the CRUD operations in database. Example: `ContestDao`.
+1. **HibernateDao**: implements the CRUD operations in database. Example: `ContestHibernateDao`.
+1. **Model**: represents a row in a database. Example: `ContestModel`.
