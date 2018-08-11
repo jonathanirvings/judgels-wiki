@@ -2,6 +2,7 @@ This section explains the basic knowledge required for understanding Judgels cod
 
 - [Tech stack](#tech-stack)
 - [Authentication](#authentication)
+- [Application layers](#application-layers)
 
 ## Tech stack
 
@@ -16,3 +17,8 @@ This section explains the basic knowledge required for understanding Judgels cod
 
 - Access token of the currently logged-in user is stored in local storage using [redux-persist](https://github.com/rt2zz/redux-persist).
 - When hitting backend endpoints, the token is passed as an `Authorization` header in the HTTP request.
+
+## Application layers
+
+- **API modules**: TypeScript representation of backend endpoints. Example: `user.ts`
+- **Actions**: Redux thunks that handle backend API calls. Example: `userActions.ts`
