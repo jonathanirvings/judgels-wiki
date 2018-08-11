@@ -4,8 +4,8 @@ This section explains the basic knowledge required for understanding Judgels cod
 - [Database design](#database-design)
 - [Authentication and authorization](#authentication-and-authorization)
 - [REST application layers](#rest-application-layers)
-- [Communication between microservices](#communication-between-microservices)
 - [Example request-response flow](#example-request-response-flow)
+- [Further readings](#further-readings)
 
 ## Tech stack
 
@@ -38,7 +38,10 @@ Judgels adapts the database design explained here: [Phabricator Database Schema]
 
 ## Authentication and authorization
 
-An HTTP request to a Judgels backend endpoint may be accompanied by an `Authorization` header, in the form of `Bearer <token>`. It means that the request was initiated by the user represented by the bearer token. The backend will ask Jophiel to convert the bearer token into a user JID. Then, the backend will decide whether the user JID is allowed to access the endpoint. 
+- Jophiel stores the session of a logged-in user as a token in the form of random string.
+- An HTTP request to a backend endpoint may be accompanied by an `Authorization` header, in the form of `Bearer <token>`, meaning that the request was initiated by the user represented by the bearer token.
+- Backends ask Jophiel to convert the bearers token in the authorization header into a user JID.
+- Each backend has its own authorization scheme whether or not to allow certain users to hit certain endpoints.
 
 ## REST application layers
 
@@ -48,10 +51,6 @@ An HTTP request to a Judgels backend endpoint may be accompanied by an `Authoriz
 - **Dao**: declares the CRUD operations in database. Example: `ContestDao`.
 - **HibernateDao**: implements the CRUD operations by executing SQL queries. Example: `ContestHibernateDao`.
 - **Model**: represents a row in a database. Example: `ContestModel`.
-
-## Communication between microservices
-
-See [Palantir http-remoting](https://github.com/palantir/http-remoting) library.
 
 ## Example request-response flow
 
@@ -73,3 +72,19 @@ The following is a simplified sequence of events that will happen.
 1. The store returns the `Contest` to the resource method.
 1. The resource method returns the `Contest`.
 1. The return value is then converted into an HTTP response, with a JSON body representing the contest object.
+
+## Further readings
+
+It is important to also read the documentation of these libraries in order to help understand Judgels backend codebase:
+
+- [Dropwizard](https://www.dropwizard.io/)
+  - Jersey, JAX-RS
+  - configs, bundles
+- [Dagger](https://google.github.io/dagger/users-guide):
+  - components, modules, providers, singletons
+  - how dependency injections work
+- [Immutables](https://immutables.github.io/)
+  - immutability, builders, precondition checks
+- [Palantir http-remoting](https://github.com/palantir/http-remoting)
+  - how microservices talk to each other
+  - how microservices handle errors from each other
