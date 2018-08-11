@@ -4,6 +4,7 @@ This section explains the basic knowledge required for understanding Judgels cod
 - [Database design](#database-design)
 - [Authentication and authorization](#authentication-and-authorization)
 - [REST application layers](#rest-application-layers)
+- [Communication between microservices](#communication-between-microservices)
 - [Example request-response flow](#example-request-response-flow)
 
 ## Tech stack
@@ -12,6 +13,7 @@ This section explains the basic knowledge required for understanding Judgels cod
 - [Gradle](https://gradle.org/) as build tool
 - [Palantir Baseline](https://github.com/palantir/gradle-baseline) for code style checker
 - [Palantir SLS Packaging](https://github.com/palantir/sls-packaging) for packaging app
+- [Palantir http-remoting](https://github.com/palantir/http-remoting) for communication between microservices
 - [Dropwizard](https://www.dropwizard.io/) for main REST server app
 - [MySQL](https://www.mysql.com/) for database
 - [JPA](https://en.wikipedia.org/wiki/Java_Persistence_API) implemented with [Hibernate](http://hibernate.org/orm/) for ORM
@@ -46,6 +48,10 @@ An HTTP request to a Judgels backend endpoint may be accompanied by an `Authoriz
 - **Dao**: declares the CRUD operations in database. Example: `ContestDao`.
 - **HibernateDao**: implements the CRUD operations by executing SQL queries. Example: `ContestHibernateDao`.
 - **Model**: represents a row in a database. Example: `ContestModel`.
+
+## Communication between microservices
+
+See [Palantir http-remoting](https://github.com/palantir/http-remoting) library.
 
 ## Example request-response flow
 
