@@ -27,6 +27,10 @@ This section explains how to run the Judgels platform locally from source, with 
 ## Setting up frontend project
 
 1. Go to Raphael directory (`judgels-frontends/raphael`).
+1. Copy the example config:
+
+       cp public/var/conf/raphael.js.example public/var/conf/raphael.js
+
 1. Run: `yarn && yarn test`
 
    This will download all required NPM dependencies and run the tests. Note that it may take quite a while for the first time.
