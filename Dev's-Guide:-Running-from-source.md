@@ -7,6 +7,7 @@ This section explains how to run the Judgels platform locally from source, with 
 - [Setting up Uriel](#setting-up-uriel)
 - [Running the microservices](#running-the-microservices)
 - [Optional: setting up Sandalphon](#optional-setting-up-sandalphon)
+- [Miscellaneous](#miscellaneous)
 
 ## Prerequisites
 
@@ -93,3 +94,7 @@ To be able to view problems, you can connect your Uriel to TOKI's staging Sandal
          clientSecret: sandalphon-staging
 
 1. Verify that you can view the problems in the contests.
+
+## Miscellaneous
+
+- The seed data contains a `superadmin` and 6 users with the following usernames: `andi`, `budi`, `caca`, `dudi`, `emir`, `fuad`. Passwords are equal to the usernames.
