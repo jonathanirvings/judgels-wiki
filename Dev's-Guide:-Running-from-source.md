@@ -6,6 +6,7 @@ This section explains how to run the Judgels platform locally from source, with 
 - [Setting up Jophiel](#setting-up-jophiel)
 - [Setting up Uriel](#setting-up-uriel)
 - [Running the microservices](#running-the-microservices)
+- [Optional: setting up Sandalphon](#optional-setting-up-sandalphon)
 
 ## Prerequisites
 
@@ -77,3 +78,16 @@ The steps are similar to Jophiel's above. Just replace replace all occurrences o
 1. Make sure that you can log in successfully.
 
 Congratulations, you have successfully run Judgels from source!
+
+## Optional: setting up Sandalphon
+
+You can connect your Uriel to TOKI's staging Sandalphon as follows:
+
+1. Go to Jophiel directory (`judgels-backends/uriel`).
+1. Open the config file `uriel-dist/var/conf/uriel.yml`.
+1. Under `uriel:`, set the `sandalphon:` keys as follows:
+
+       sandalphon:
+         baseUrl: https://sandalphon.tlx.toki-staging.org
+         clientJid: JIDSACL-staging
+         clientSecret: sandalphon-staging
