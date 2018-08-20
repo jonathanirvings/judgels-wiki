@@ -84,7 +84,7 @@ Congratulations, you have successfully run Judgels from source!
 
 To be able to view problems, you can connect your Uriel to TOKI's staging Sandalphon as follows:
 
-1. Go to Jophiel directory (`judgels-backends/uriel`).
+1. Go to Uriel directory (`judgels-backends/uriel`).
 1. Open the config file `uriel-dist/var/conf/uriel.yml`.
 1. Under `uriel:`, set the `sandalphon:` keys as follows:
 
