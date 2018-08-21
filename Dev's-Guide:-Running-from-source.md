@@ -7,6 +7,7 @@ This section explains how to run the Judgels platform locally from source, with 
 - [Setting up Uriel](#setting-up-uriel)
 - [Running the microservices](#running-the-microservices)
 - [Optional: setting up Sandalphon](#optional-setting-up-sandalphon)
+- [Optional: setting up Sealtiel](#optional-setting-up-sealtiel)
 - [Miscellaneous](#miscellaneous)
 
 ## Prerequisites
@@ -94,6 +95,21 @@ To be able to view problems, you can connect your Uriel to TOKI's staging Sandal
          clientSecret: sandalphon-staging
 
 1. Verify that you can view the problems in the contests.
+
+## Optional: setting up Sealtiel
+
+To be able to view submit solutions, you can connect your Uriel to TOKI's staging Sealtiel as follows:
+
+1. Go to Uriel directory (`judgels-backends/uriel`).
+1. Open the config file `uriel-dist/var/conf/uriel.yml`.
+1. Under `uriel:`, set the `sealtiel:` keys as follows:
+
+       sealtiel:
+         baseUrl: https://sealtiel.tlx.toki-staging.org
+         clientJid: JIDSECL-uriel-staging
+         clientSecret: sealtiel-staging
+
+1. Verify that you can submit solutions in the contests.
 
 ## Miscellaneous
 
