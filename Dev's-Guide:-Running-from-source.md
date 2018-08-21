@@ -109,7 +109,7 @@ To be able to view submit solutions, you can connect your Uriel to TOKI's stagin
          clientJid: JIDSECL-uriel-staging
          clientSecret: sealtiel-staging
 
-1. Verify that you can submit solutions in the contests.
+1. Verify that you can submit solutions in the contests. Note that currently, your solutions won't be graded yet.
 
 ## Miscellaneous
 
