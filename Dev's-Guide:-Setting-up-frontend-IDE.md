@@ -22,7 +22,7 @@ Any IDE, but we highly recommend using IntelliJ IDEA. This section will only cov
    Now, whenever you edit and save files, Prettier will be run to format the files.
 
 1. Configure Jest for testing:
-   1. Open **Run** -> **Edit configurations...*
+   1. Open **Run** -> **Edit configurations...**
    1. Select **Jest** under **Defaults** on the left.
    1. Edit the options and environment variables as depicted below.
 
