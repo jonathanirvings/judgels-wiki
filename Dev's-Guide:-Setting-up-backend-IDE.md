@@ -24,6 +24,7 @@ We highly recommend using IntelliJ IDEA. This section will only cover setup on I
       [[images/annotation-preprocessors.png]]
 
 1. Try building the project by clicking **Build** -> **Rebuild Project**.
+1. After this, the generated classes should be created. However, they are not marked as source classes yet. To fix this, run `./gradlew idea` again, and then rebuild again.
 1. If the build succeeded, you're all set!
 
 ## Running server from IDEA
