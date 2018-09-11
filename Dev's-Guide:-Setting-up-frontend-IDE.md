@@ -20,3 +20,12 @@ Any IDE, but we highly recommend using IntelliJ IDEA. This section will only cov
      [[images/prettier-tsx.png]]
    
    Now, whenever you edit and save files, Prettier will be run to format the files.
+
+1. Configure Jest for testing:
+   1. Open **Run** -> **Edit configurations...*
+   1. Select **Jest** on **Defaults**.
+   1. Fill in the flags and environment variables as depicted below.
+
+      [[images/jest-configuration.png]]
+
+   Now, you can run tests from IDEA.
