@@ -40,6 +40,12 @@ This section explains how to run the Judgels platform locally from source, with 
 
 1. Make sure the tests pass before moving on to the next sections.
 
+   - If you get `Error: EMFILE: too many open files, watch` on macOS, run:
+
+         brew install watchman
+
+     See https://github.com/facebook/create-react-app/issues/4540 for more details.
+
 ## Setting up Jophiel
 
 1. Create a new local database called `judgels_jophiel`.
