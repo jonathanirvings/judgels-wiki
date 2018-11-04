@@ -13,6 +13,7 @@ Any IDE, but we highly recommend using IntelliJ IDEA. This section will only cov
 1. Click **Open**, and then select `judgels-frontends/raphael` directory. The project should now be ready.
 1. Configure linters:
    1. Open **Preferences**.
+   1. Go to **Plugins**, then install **File Watchers** plugin.
    1. Go to **Tools** -> **File Watchers**.
    1. Add the following two entries: Prettier TS and Prettier TSX as depicted below.
 
