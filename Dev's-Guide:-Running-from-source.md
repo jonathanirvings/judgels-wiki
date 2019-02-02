@@ -12,11 +12,14 @@ This section explains how to run the Judgels platform locally from source, with 
 
 ## Prerequisites
 
-- Java 8 JDK
-- MySQL 5.7+
-- Yarn 1.3+
-- Docker
-- IntelliJ IDEA
+- [Java 8 JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+  - Earlier or later versions of Java may not work.
+- [MySQL 5.7](https://dev.mysql.com/downloads/installer/)
+  - Earlier or later versions of MySQL may not work.
+- [Yarn 1.3+](https://yarnpkg.com/lang/en/docs/install)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- [Inteliij IDEA](https://www.jetbrains.com/idea/download)
+  - Inteliij IDEA Community Editions is sufficient.
 
 ## Setting up backend project
 
@@ -25,7 +28,7 @@ This section explains how to run the Judgels platform locally from source, with 
 
    This will download all required JAR dependencies, and run all unit and integration tests. Note that it may take quite a while for the first time.
 
-1. Make sure the tests pass before moving on to the next sections.
+1. Make sure the tests pass before moving on to the next sections (except for Docker errors, see the [Troubleshooting](#troubleshooting) section below). 
 
 ## Setting up frontend project
 
@@ -58,12 +61,13 @@ This section explains how to run the Judgels platform locally from source, with 
 1. Under `database:`, modify `url`, `user`, and `password` as necessary.
 1. Run database migration: `../gradlew dbMigrate`.
 1. Verify that there are tables generated in the database.
+1. Go to Judgels repository root.
 1. Import the seed data (`seeds/judgels_jophiel.sql`) to the database.
 1. Verify that there data generated in the database.
 
 ## Setting up Uriel
 
-The steps are similar to Jophiel's above. Just replace replace all occurrences of `jophiel` to `uriel`.
+The steps are similar to Jophiel's above. Just replace all occurrences of `jophiel` to `uriel`.
 
 ## Running the microservices
 
@@ -120,3 +124,11 @@ To be able to view submit solutions, you can connect your Uriel to TOKI's stagin
 ## Miscellaneous
 
 - The seed data contains a `superadmin` and 6 users with the following usernames: `andi`, `budi`, `caca`, `dudi`, `emir`, `fuad`. Passwords are equal to the usernames.
+
+## Troubleshooting
+
+* `java.lang.IllegalStateException: Could not find a valid Docker environment.` when running `./gradlew check`
+  - This is due to the Docker not setup yet&mdash;we can ignore Docker errors for now.
+
+* `java.sql.SQLException: Unable to load authentication plugin 'caching_sha2_password'.` when running `../gradlew dbMigrate`
+  - Please make sure that you are using MySQL 5.7 (and not later versions)
